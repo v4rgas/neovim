@@ -12,9 +12,6 @@ local diagnostics = null_ls.builtins.diagnostics
 null_ls.setup({
 	debug = false,
 	sources = {
-		-- js
-		formatting.eslint_d,
-		diagnostics.eslint,
 
 		-- css
 		formatting.prettier.with({
@@ -28,5 +25,9 @@ null_ls.setup({
 		-- C
 		formatting.clang_format,
 		diagnostics.cppcheck,
+
+		-- js
+		formatting.eslint_d,
+		diagnostics.eslint,
 	},
 })
